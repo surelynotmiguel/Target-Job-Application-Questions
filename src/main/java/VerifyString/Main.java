@@ -1,3 +1,5 @@
+package VerifyString;
+
 import java.util.Scanner;
 
 public class Main {

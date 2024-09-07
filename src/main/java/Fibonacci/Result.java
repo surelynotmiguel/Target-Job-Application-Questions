@@ -7,19 +7,12 @@ public class Result {
         int sNumber = 1;
         int current = fNumber + sNumber;
 
-        boolean isInSequence = false;
-
-        for(int i = 2; i < number; i++) {
-            if (current == number) {
-                isInSequence = true;
-                break;
-            }
-
+        while(current < number) {
             fNumber = sNumber;
             sNumber = current;
             current = fNumber + sNumber;
         }
 
-        return (isInSequence ? "Number " + number + " is in sequence" : "Number " + number + " is not in sequence");
+        return (current == number ? "Number " + number + " is in sequence" : "Number " + number + " is not in sequence");
     }
 }

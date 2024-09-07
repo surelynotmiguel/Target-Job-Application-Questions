@@ -1,3 +1,5 @@
+package VerifyString;
+
 public class Result {
 
     public static void verifyCharPresenceAndOccurrence(String text) {
